@@ -1,0 +1,11 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Laptop ABC",
+        "price": 1500,
+        "description": "Laptop mạnh mẽ",
+        "image": "https://via.placeholder.com/150"
+      }
+    ]
+  }
