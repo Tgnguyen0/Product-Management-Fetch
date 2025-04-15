@@ -23,7 +23,7 @@ const Home = () => {
     <div className="p-4 max-w-4xl mx-auto">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold">Danh sách sản phẩm</h1>
-        <Link to="/add" className="bg-blue-500 text-white px-4 py-2 rounded">Thêm mới</Link>
+        <Link to="/add" className="bg-blue-500 text-white px-4 py-2 rounded btn btn-primary">Thêm mới</Link>
       </div>
       {loading ? <Spinner /> : (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
