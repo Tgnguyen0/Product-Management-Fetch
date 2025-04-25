@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product, onDelete }) => (
     <Link className="card border p-4 rounded shadow" to={`/product/${product.id}`} >
-        <img src={product.image || 'https://via.placeholder.com/150'} alt={product.name} className="card-img-top mb-2 w-full h-40 object-cover" />
+        <img src={product.images || 'https://via.placeholder.com/150'} alt={product.name} className="card-img-top mb-2 w-full h-40 object-cover" />
         <div class="card-body">
             <h4 className="text-xl font-semibold">{product.title}</h4>
             <p class="text-green-600 font-bold card-text">Price: ${product.price}</p>
