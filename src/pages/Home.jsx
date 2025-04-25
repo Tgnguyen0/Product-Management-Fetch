@@ -26,9 +26,17 @@ const Home = () => {
         <Link to="/add" className="bg-blue-500 text-white px-4 py-2 rounded btn btn-primary">Thêm mới</Link>
       </div>
       {loading ? <Spinner /> : (
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {items.map(product => (
-            <ProductCard key={product.id} product={product} onDelete={handleDelete} />
+        <div className="row">
+          {items.map((product, index) => (
+            index % 2 !== 0 ? (
+              <div className="col-12 col-sm-6 col-md-4 mb-4" key={product.id}>
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  onDelete={handleDelete}
+                />
+              </div>
+            ) : (<br></br>)
           ))}
         </div>
       )}
